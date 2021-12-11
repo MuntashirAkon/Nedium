@@ -1,0 +1,21 @@
+plugins {
+    id 'java-library'
+    id 'kotlin'
+    id("com.apollographql.apollo").version("2.5.11")
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+dependencies {
+    // Okhttp  -HTTP client
+    implementation "com.squareup.okhttp3:okhttp:3.12.13"
+
+    // Apollo  -Graphql client
+    implementation("com.apollographql.apollo:apollo-runtime:2.5.11")
+
+    // Gson
+    implementation 'com.google.code.gson:gson:2.8.9'
+}

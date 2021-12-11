@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Nedium"
 include ':app'
+include ':NediumExtractor'
